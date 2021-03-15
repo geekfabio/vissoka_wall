@@ -10,7 +10,7 @@ class MockupData {
     getTags();
   }
 
-  List<TagModel> tags = [];
+  List<TagsModel> tags = [];
   List<CategoryModel> categories = [];
   List<ColorModel> colors = [];
 
@@ -54,22 +54,22 @@ class MockupData {
   }
 
   getTags() {
-    TagModel item = new TagModel(
+    TagsModel item = new TagsModel(
         id: 1, title: "Anime", image: "assets/img/1.jpg", quantity: "+300");
     tags.add(item);
-    item = new TagModel(
+    item = new TagsModel(
         id: 2, title: "Otakus", image: "assets/img/2.jpg", quantity: "+760");
     tags.add(item);
-    item = new TagModel(
+    item = new TagsModel(
         id: 3,
         title: "Developers",
         image: "assets/img/3.jpg",
         quantity: "+200");
     tags.add(item);
-    item = new TagModel(
+    item = new TagsModel(
         id: 4, title: "Hackers", image: "assets/img/4.jpg", quantity: "+379");
     tags.add(item);
-    item = new TagModel(
+    item = new TagsModel(
         id: 5, title: "Sexy", image: "assets/img/4.jpg", quantity: "+678");
     tags.add(item);
 
