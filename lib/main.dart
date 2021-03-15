@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_word/pages/tab_pages.dart';
+import 'UI/pages/tab_pages.dart';
 
 void main() {
   runApp(MyApp());
