@@ -1,5 +1,4 @@
-/* color list
-import 'package:dots_indicator/dots_indicator.dart';
+/* port 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hello_word/widgets/public/myButtom_tabs.dart';
@@ -1922,7 +1921,4 @@ class _FinancingAppState extends State<FinancingApp> {
     ];
   }
 }
-
-
-
 */

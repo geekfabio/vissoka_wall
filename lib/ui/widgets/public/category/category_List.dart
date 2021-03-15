@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_word/models/category.model.dart';
+import '../load_progress.dart';
 import 'category_card.widget.dart';
-import 'load_progress.dart';
 
 class CategoryList extends StatelessWidget {
   final List<CategoryModel> categories;
@@ -21,7 +21,6 @@ class CategoryList extends StatelessWidget {
 
   Widget list() {
     print("/////////////");
-
     return ListView.builder(
       scrollDirection: Axis.horizontal,
       itemCount: categories.length,

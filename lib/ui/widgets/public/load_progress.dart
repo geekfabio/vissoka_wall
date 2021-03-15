@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:hello_word/widgets/public/loadIndicator.dart';
+import 'package:hello_word/ui/widgets/public/loadIndicator.dart';
 
 class LoaderProgress extends StatelessWidget {
   final object;
