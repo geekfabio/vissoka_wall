@@ -28,13 +28,11 @@ class TagsCard extends StatelessWidget {
         },
         child: Container(
           width: 60.0,
-          height: 200.0,
-          margin: EdgeInsets.all(15),
-          padding: EdgeInsets.all(55),
+          height: 100.0,
           decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage(item.image)),
-            color: Colors.blue,
-            borderRadius: BorderRadius.all(Radius.circular(25.0)),
+            image: DecorationImage(
+                image: AssetImage(item.image), fit: BoxFit.fill),
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
           ),
         ),
       );
