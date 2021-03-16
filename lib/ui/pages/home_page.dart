@@ -27,6 +27,15 @@ class HomePage extends StatelessWidget {
             CategoryList(categories: bloc.categories),
             SizedBox(height: 5),
             ColorList(colors: bloc.colors),
+            SizedBox(height: 5),
+            Text(
+              "Em Destaques",
+              style: Theme.of(context)
+                  .textTheme
+                  .headline6
+                  .copyWith(color: Colors.black38),
+            ),
+            SizedBox(height: 15),
             TagsList(tags: bloc.tags)
           ],
         ),
