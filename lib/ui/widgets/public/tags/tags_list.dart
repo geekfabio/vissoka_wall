@@ -13,7 +13,7 @@ class TagsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250,
+      height: 300,
       child: LoaderProgress(
         object: tags,
         callback: buildCarouselSlider,
@@ -22,25 +22,24 @@ class TagsList extends StatelessWidget {
   }
 
   Widget buildCarouselSlider() {
-    return Center(
-      child: Swiper(
-        autoplay: true,
-        autoplayDisableOnInteraction: true,
-        containerHeight: 200,
-        duration: 2000,
-        viewportFraction: 1.5,
-        scale: 1.9,
-        itemCount: tags.length,
-        pagination: new SwiperPagination(),
-        itemBuilder: (context, index) {
-          TagsModel item = tags[index];
-          return Container(
-            child: TagsCard(
-              item: item,
-            ),
-          );
-        },
-      ),
+    return Swiper(
+      autoplay: true,
+      autoplayDisableOnInteraction: true,
+      containerHeight: 260,
+      duration: 2000,
+      scale: 1.2,
+      itemCount: tags.length,
+      pagination: new SwiperPagination(),
+      itemBuilder: (context, index) {
+        TagsModel item = tags[index];
+        return Container(
+          margin: EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
+          child: TagsCard(
+            item: item,
+          ),
+        );
+      },
     );
   }
 }
