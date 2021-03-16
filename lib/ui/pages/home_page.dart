@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
             ColorList(colors: bloc.colors),
             SizedBox(height: 5),
             Text(
-              "Em Destaques",
+              "Em Destaque",
               style: Theme.of(context)
                   .textTheme
                   .headline6
