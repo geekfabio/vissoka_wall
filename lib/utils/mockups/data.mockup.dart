@@ -72,7 +72,9 @@ class MockupData {
     item = new TagsModel(
         id: 5, title: "Sexy", image: "assets/img/7.jpg", quantity: "+678");
     tags.add(item);
-
+    item = new TagsModel(
+        id: 6, title: "Sexy", image: "assets/img/6.jpg", quantity: "+678");
+    tags.add(item);
     return tags;
   }
 }
