@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_word/models/category.model.dart';
 import 'package:hello_word/models/color.model.dart';
+import 'package:hello_word/models/recommended.model.dart';
 import 'package:hello_word/models/tags.model.dart';
 
 class MockupData {
@@ -8,12 +9,13 @@ class MockupData {
     getData();
     getColors();
     getTags();
+    getRecommend();
   }
 
   List<TagsModel> tags = [];
   List<CategoryModel> categories = [];
   List<ColorModel> colors = [];
-
+  List<RecommendedModel> recommended = [];
   getData() {
     CategoryModel model =
         new CategoryModel(id: "1", title: "Cat", tag: "animal");
@@ -76,5 +78,23 @@ class MockupData {
         id: 6, title: "Sexy", image: "assets/img/6.jpg", quantity: "+678");
     tags.add(item);
     return tags;
+  }
+
+  getRecommend() {
+    RecommendedModel item = new RecommendedModel(
+        title: "Anime", img: "assets/img/1.jpg", total: 300);
+    recommended.add(item);
+    item = new RecommendedModel(
+        title: "Anime", img: "assets/img/2.jpg", total: 10);
+    recommended.add(item);
+    item = new RecommendedModel(
+        title: "Anime", img: "assets/img/3.jpg", total: 20);
+    recommended.add(item);
+    item = new RecommendedModel(
+        title: "Anime", img: "assets/img/4.jpg", total: 950);
+    recommended.add(item);
+    item = new RecommendedModel(
+        title: "Anime", img: "assets/img/6.jpg", total: 100);
+    recommended.add(item);
   }
 }

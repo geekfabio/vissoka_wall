@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hello_word/ui/widgets/public/RecommendedList/RecommendedList.widget.dart';
 import 'package:hello_word/ui/widgets/public/category/category_List.dart';
-import 'package:hello_word/ui/widgets/public/colors/color_list.dart';
+import 'package:hello_word/ui/widgets/public/colorscard/color_list.dart';
 import 'package:hello_word/ui/widgets/public/tags/tags_list.dart';
 import 'package:hello_word/utils/mockups/data.mockup.dart';
 
@@ -36,7 +37,17 @@ class HomePage extends StatelessWidget {
                   .copyWith(color: Colors.black38),
             ),
             SizedBox(height: 15),
-            TagsList(tags: bloc.tags)
+            TagsList(tags: bloc.tags),
+            SizedBox(height: 10),
+            Text(
+              "Recommended",
+              style: Theme.of(context)
+                  .textTheme
+                  .headline6
+                  .copyWith(color: Colors.black38),
+            ),
+            SizedBox(height: 5),
+            RecommendedList(cards: bloc.recommended)
           ],
         ),
       ),
